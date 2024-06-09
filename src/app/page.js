@@ -1,11 +1,6 @@
-import React from 'react';
-
-import {
-  readFile,
-  writeFile,
-} from '../helpers/file-helpers';
-
-const DATABASE_PATH = '/src/database.json';
+import React from "react";
+import CensoredButton from "./Button";
+import HitCounter from "./HitCounter";
 
 /*
 `readFile` takes 1 argument:
@@ -27,7 +22,12 @@ function Home() {
   return (
     <main>
       <h1>Welcome!</h1>
-      <p>You are visitor number X.</p>
+      <p>
+        You are visitor number{" "}
+        <CensoredButton>
+          <HitCounter />
+        </CensoredButton>
+      </p>
     </main>
   );
 }
