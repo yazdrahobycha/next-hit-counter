@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import React from "react";
 const DATABASE_PATH = "/src/database.json";
 import { readFile, writeFile } from "../helpers/file-helpers";
