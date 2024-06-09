@@ -1,16 +1,14 @@
-import React from 'react';
+export const dynamic = "force-dynamic";
+import React from "react";
 
-import './styles.css';
+import "./styles.css";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
         {children}
-        <footer>
-          Page rendered on{' '}
-          {new Date().toLocaleString()}
-        </footer>
+        <footer>Page rendered on {new Date().toLocaleString()}</footer>
       </body>
     </html>
   );
